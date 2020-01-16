@@ -44,5 +44,5 @@ def lvw(data, target, n, gamma=0., max_tries=100000, random_state=0):
                 c_best = c
         elif c == c_best and incon_check(s, target) <= gamma:
             print(s.columns)
-    return s_best
+    return s_best.columns.values
 

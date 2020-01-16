@@ -15,7 +15,7 @@ def one_hot_encode(dataframe, column_name, multiple_values):
     dataframe[[column_name]].applymap(lambda x: get_possible_values(x, temp))
 
     for i in temp:
-        dataframe[i] = np.zeros(95)
+        dataframe[i] = np.zeros(dataframe.shape[0])
 
     counter = 0
     for i in dataframe.loc[:, column_name]:
