@@ -30,13 +30,14 @@ def incon_check(data, target):
     return inconsistency_count / data.size
 
 
-def lvw(data, target, n, gamma=0., max_tries=100000, random_state=0):
+def lvw(data, target, gamma=0., max_tries=100000, random_state=0):
     random.seed(random_state)
+    n = data.shape[1]
     c_best = n
     s_best = None
     for _ in range(max_tries):
-        c = random.randrange(1, n + 1)
-        indices = random.sample(range(0, n), c)
+        c = random.randrange(1, n)
+        indices = random.sample(range(0, n-1), c)
         s = data.iloc[:, indices]
         if c < c_best:
             if incon_check(s, target) <= gamma:
