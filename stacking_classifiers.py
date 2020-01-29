@@ -65,11 +65,12 @@ def stacking_classifier_performance_cv(estimators, metadata_selected, vis_select
             recall_score(Y_test, Y_pred_label_stacking))
         label_stacking_results_cv.append(label_stacking_results)
 
-        complete_data = metadata_selected.join([vis_selected, text_selected, audio_selected])
-        complete_data.reindex(range(complete_data.shape[0]))
-        X_train_pred_and_features = complete_data.drop(complete_data.index[range(index_1, index_2)]).join(
-            pd.DataFrame(estimator_predictions_train))
-        X_test_pred_and_features = complete_data[index_1:index_2].join(pd.DataFrame(estimator_predictions_test))
+        complete_data = pd.concat([metadata_selected, vis_selected, text_selected, audio_selected], axis=1, join='inner', sort=False)
+        X_train_features = pd.DataFrame(complete_data.drop(complete_data.index[range(index_1, index_2)])).reset_index(drop=True)
+        X_train_pred_and_features = X_train_features.join(
+            pd.DataFrame(estimator_predictions_train), lsuffix='df_1',rsuffix='df_2')
+        X_test_features = pd.DataFrame(complete_data[index_1:index_2]).reset_index(drop=True)
+        X_test_pred_and_features = X_test_features.join(pd.DataFrame(estimator_predictions_test), lsuffix='df_3',rsuffix='df_4')
 
         label_and_feature_stacking_cf = LogisticRegression(penalty='l2', dual=False, tol=0.0001, C=1.0,
                                                            fit_intercept=True, intercept_scaling=1,
@@ -143,11 +144,14 @@ def stacking_classifier_performance_on_test_set(estimators, metadata_selected, v
         f1_score(Y_test, Y_pred_label_stacking), precision_score(Y_test, Y_pred_label_stacking),
         recall_score(Y_test, Y_pred_label_stacking))
 
-    complete_data = metadata_selected.join([vis_selected, text_selected, audio_selected])
-    complete_data.reindex(range(complete_data.shape[0]))
-    X_train_pred_and_features = complete_data.drop(complete_data[0:split_index]).join(
-        pd.DataFrame(estimator_predictions_train))
-    X_test_pred_and_features = complete_data[split_index:].join(pd.DataFrame(estimator_predictions_test))
+    complete_data = pd.concat([metadata_selected, vis_selected, text_selected, audio_selected], axis=1, join='inner',
+                              sort=False)
+    X_train_features = pd.DataFrame(complete_data[0:split_index])
+    X_train_pred_and_features = X_train_features.join(
+        pd.DataFrame(estimator_predictions_train), lsuffix='df_1', rsuffix='df_2')
+    X_test_features = pd.DataFrame(complete_data[split_index:]).reset_index(drop=True)
+    X_test_pred_and_features = X_test_features.join(pd.DataFrame(estimator_predictions_test), lsuffix='df_3',
+                                                    rsuffix='df_4')
 
     label_and_feature_stacking_cf = LogisticRegression(penalty='l2', dual=False, tol=0.0001, C=1.0,
                                                        fit_intercept=True, intercept_scaling=1,

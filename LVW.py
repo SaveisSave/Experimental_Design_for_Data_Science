@@ -1,6 +1,7 @@
 import random
 import numpy as np
 from collections import defaultdict
+from tqdm import trange
 
 
 def incon_check(data, target):
@@ -35,7 +36,7 @@ def lvw(data, target, gamma=0., max_tries=100000, random_state=0):
     n = data.shape[1]
     c_best = n
     s_best = None
-    for _ in range(max_tries):
+    for i in trange(max_tries):
         c = random.randrange(1, n)
         indices = random.sample(range(0, n-1), c)
         s = data.iloc[:, indices]
@@ -43,7 +44,5 @@ def lvw(data, target, gamma=0., max_tries=100000, random_state=0):
             if incon_check(s, target) <= gamma:
                 s_best = s
                 c_best = c
-        elif c == c_best and incon_check(s, target) <= gamma:
-            print(s.columns)
-    return s_best.columns.values
+    return s_best.columns
 
