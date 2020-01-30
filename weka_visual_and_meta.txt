@@ -1,0 +1,167 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -C 0.25 -M 2
+Relation:     complete_data-weka.filters.unsupervised.attribute.Remove-R3-8,951-9000
+Instances:    317
+Attributes:   945
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+meta_and_user_Comedy > 0 AND
+visual_68 <= 0.626375 AND
+meta_and_user_French <= 0 AND
+meta_and_user_Crime <= 0 AND
+visual_151 <= 0.000049 AND
+visual_262 <= 0.000066 AND
+meta_and_user_NOT RATED > 0: 1 (15.0)
+
+meta_and_user_Hindi > 0 AND
+visual_92 <= 0.23314 AND
+meta_and_user_Action <= 0: 0 (9.0)
+
+visual_726 > 0.000071 AND
+visual_776 > 0.246855: 1 (12.0/1.0)
+
+meta_and_user_Family > 0 AND
+visual_79 > 0.16234: 1 (12.0)
+
+meta_and_user_Germany > 0 AND
+visual_215 <= 0.000066: 1 (16.0/1.0)
+
+visual_98 > 0.45744: 0 (14.0/1.0)
+
+meta_and_user_Italian > 0 AND
+visual_782 > 0.156175: 1 (13.0/1.0)
+
+visual_177 > 0.000277 AND
+meta_and_user_runtime > 107: 0 (9.0)
+
+meta_and_user_Crime <= 0 AND
+visual_11 <= 0.35479 AND
+visual_50 > 0.18075: 1 (18.0)
+
+visual_90 > 0.2039 AND
+meta_and_user_History <= 0 AND
+visual_45 > 0.10221: 0 (22.0)
+
+visual_90 > 0.19511: 1 (12.0)
+
+visual_43 > 0.57404: 1 (10.0)
+
+meta_and_user_Fantasy > 0 AND
+visual_157 <= 0.000024 AND
+visual_803 > 0.00247: 0 (8.0)
+
+visual_361 > 0.000063 AND
+visual_164 <= 0.000051: 0 (6.0)
+
+visual_518 > 0.000317: 1 (11.0)
+
+visual_50 <= 0.17145 AND
+meta_and_user_France > 0 AND
+meta_and_user_Spanish <= 0: 0 (8.0/1.0)
+
+visual_50 > 0.17145: 0 (7.0)
+
+meta_and_user_Russian > 0 AND
+visual_148 <= 0.005286: 0 (4.0)
+
+meta_and_user_Biography <= 0 AND
+meta_and_user_NOT RATED <= 0 AND
+visual_149 <= 0.000083 AND
+meta_and_user_Australia <= 0 AND
+visual_178 <= 0.000109 AND
+visual_153 <= 0.000091 AND
+visual_263 <= 0.000069 AND
+visual_698 <= 0.00005 AND
+visual_178 <= 0.000056 AND
+visual_15 <= 0.099593 AND
+visual_76 <= 0.48357 AND
+meta_and_user_Music <= 0 AND
+visual_558 <= 0.000026 AND
+meta_and_user_Action <= 0: 1 (30.0/3.0)
+
+visual_149 <= 0.000083 AND
+visual_177 > 0.000111 AND
+meta_and_user_Germany <= 0 AND
+meta_and_user_Comedy <= 0: 1 (16.0)
+
+visual_149 <= 0.000083 AND
+visual_193 <= 0.000081 AND
+visual_518 <= 0.000204 AND
+visual_538 <= 0.000058 AND
+visual_263 <= 0.000048 AND
+visual_824 <= 129600: 0 (20.0/1.0)
+
+visual_729 <= 0.000085 AND
+visual_258 <= 0.000056 AND
+meta_and_user_Japan <= 0 AND
+meta_and_user_History <= 0 AND
+meta_and_user_Crime <= 0 AND
+meta_and_user_Australia <= 0 AND
+meta_and_user_Canada <= 0 AND
+meta_and_user_Korean <= 0 AND
+meta_and_user_English > 0 AND
+meta_and_user_NOT RATED <= 0 AND
+visual_712 <= 0.000033 AND
+visual_361 <= 0.000029 AND
+meta_and_user_USA > 0 AND
+visual_39 <= 0.348255 AND
+visual_791 > 105.97: 1 (6.0/1.0)
+
+meta_and_user_English > 0 AND
+meta_and_user_Australia <= 0 AND
+meta_and_user_Korean <= 0 AND
+visual_157 <= 0.000043 AND
+meta_and_user_R <= 0 AND
+meta_and_user_Romance <= 0: 0 (11.0)
+
+meta_and_user_English > 0 AND
+meta_and_user_Australia <= 0 AND
+meta_and_user_Korean <= 0 AND
+meta_and_user_NOT RATED <= 0 AND
+visual_75 <= 0.55024 AND
+meta_and_user_Action <= 0: 1 (12.0/1.0)
+
+visual_792 <= 852 AND
+meta_and_user_USA <= 0: 1 (6.0)
+
+visual_33 <= 0.67293: 0 (7.0)
+
+: 1 (3.0)
+
+Number of Rules  : 	27
+
+
+Time taken to build model: 0.35 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         154               48.5804 %
+Incorrectly Classified Instances       163               51.4196 %
+Kappa statistic                         -0.064 
+Mean absolute error                      0.5116
+Root mean squared error                  0.6916
+Relative absolute error                105.7163 %
+Root relative squared error            140.6175 %
+Total Number of Instances              317     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.369    0.433    0.372      0.369    0.371      -0.064   0.472     0.390     0
+                 0.567    0.631    0.564      0.567    0.565      -0.064   0.472     0.578     1
+Weighted Avg.    0.486    0.550    0.485      0.486    0.485      -0.064   0.472     0.501     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  48  82 |   a = 0
+  81 106 |   b = 1
+

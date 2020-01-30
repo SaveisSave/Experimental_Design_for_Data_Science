@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -C 0.25 -M 2
+Relation:     complete_data-weka.filters.unsupervised.attribute.Remove-R1-2,9-9000
+Instances:    317
+Attributes:   7
+              meta_and_user_imdbRating
+              meta_and_user_metascore
+              meta_and_user_tomatoRating
+              meta_and_user_tomatoUserRating
+              meta_and_user_tomatoMeter
+              meta_and_user_tomatoUserMeter
+              goodforairplane
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+: 1 (317.0/130.0)
+
+Number of Rules  : 	1
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         186               58.6751 %
+Incorrectly Classified Instances       131               41.3249 %
+Kappa statistic                         -0.0008
+Mean absolute error                      0.4836
+Root mean squared error                  0.4984
+Relative absolute error                 99.9197 %
+Root relative squared error            101.3206 %
+Total Number of Instances              317     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.015    0.016    0.400      0.015    0.030      -0.003   0.513     0.424     0
+                 0.984    0.985    0.590      0.984    0.737      -0.003   0.513     0.597     1
+Weighted Avg.    0.587    0.587    0.512      0.587    0.447      -0.003   0.513     0.526     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   2 128 |   a = 0
+   3 184 |   b = 1
+

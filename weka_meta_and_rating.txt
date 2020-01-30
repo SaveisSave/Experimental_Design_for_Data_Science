@@ -1,0 +1,252 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -C 0.25 -M 2
+Relation:     complete_data-weka.filters.unsupervised.attribute.Remove-R125-9000
+Instances:    317
+Attributes:   125
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+meta_and_user_Comedy > 0 AND
+meta_and_user_UK > 0 AND
+meta_and_user_R <= 0: 1 (8.0)
+
+meta_and_user_Germany > 0 AND
+meta_and_user_Biography <= 0 AND
+meta_and_user_R > 0 AND
+meta_and_user_Thriller <= 0: 1 (9.0)
+
+meta_and_user_France <= 0 AND
+meta_and_user_Italian > 0 AND
+meta_and_user_Drama <= 0: 1 (9.0)
+
+meta_and_user_French > 0 AND
+meta_and_user_Thriller <= 0 AND
+meta_and_user_Sci-Fi <= 0 AND
+meta_and_user_Italian <= 0 AND
+meta_and_user_tomatoUserRating > 4: 0 (6.0)
+
+meta_and_user_Russian > 0 AND
+meta_and_user_Italian <= 0 AND
+meta_and_user_Germany <= 0 AND
+meta_and_user_tomatoRating <= 6.6: 0 (7.0)
+
+meta_and_user_Fantasy <= 0 AND
+meta_and_user_year <= 1991 AND
+meta_and_user_Thriller <= 0 AND
+meta_and_user_Hindi <= 0 AND
+meta_and_user_Musical <= 0 AND
+meta_and_user_tomatoUserRating <= 3.7 AND
+meta_and_user_Romance <= 0 AND
+meta_and_user_Drama > 0: 0 (7.0)
+
+meta_and_user_Fantasy <= 0 AND
+meta_and_user_German > 0 AND
+meta_and_user_Adventure <= 0 AND
+meta_and_user_Italian <= 0: 1 (12.0/1.0)
+
+meta_and_user_Germany > 0 AND
+meta_and_user_Biography <= 0 AND
+meta_and_user_UK <= 0: 0 (6.0)
+
+meta_and_user_Fantasy <= 0 AND
+meta_and_user_Comedy > 0 AND
+meta_and_user_PG-13 > 0 AND
+meta_and_user_Romance <= 0: 1 (7.0)
+
+meta_and_user_PG-13 <= 0 AND
+meta_and_user_Netherlands <= 0 AND
+meta_and_user_Hindi <= 0 AND
+meta_and_user_PG <= 0 AND
+meta_and_user_Spanish <= 0 AND
+meta_and_user_Sci-Fi <= 0 AND
+meta_and_user_Mandarin <= 0 AND
+meta_and_user_Action <= 0 AND
+meta_and_user_UK > 0: 1 (16.0/2.0)
+
+meta_and_user_UK <= 0 AND
+meta_and_user_Dutch > 0: 1 (10.0/1.0)
+
+meta_and_user_UK > 0 AND
+meta_and_user_Musical <= 0 AND
+meta_and_user_Mandarin <= 0 AND
+meta_and_user_Mystery <= 0 AND
+meta_and_user_History <= 0 AND
+meta_and_user_Sci-Fi <= 0 AND
+meta_and_user_Action > 0 AND
+meta_and_user_French <= 0 AND
+meta_and_user_Drama <= 0 AND
+meta_and_user_USA > 0: 1 (7.0/1.0)
+
+meta_and_user_UK > 0 AND
+meta_and_user_Musical <= 0 AND
+meta_and_user_French <= 0 AND
+meta_and_user_Adventure <= 0: 0 (8.0)
+
+meta_and_user_Fantasy > 0 AND
+meta_and_user_Animation <= 0 AND
+meta_and_user_runtime <= 158 AND
+meta_and_user_year <= 2013: 0 (9.0)
+
+meta_and_user_Fantasy > 0 AND
+meta_and_user_Drama <= 0: 1 (8.0/1.0)
+
+meta_and_user_UK <= 0 AND
+meta_and_user_Sport <= 0 AND
+meta_and_user_year > 1997 AND
+meta_and_user_Spanish <= 0 AND
+meta_and_user_Family <= 0 AND
+meta_and_user_R > 0 AND
+meta_and_user_Sci-Fi <= 0 AND
+meta_and_user_tomatoUserRating <= 4.1 AND
+meta_and_user_Horror <= 0 AND
+meta_and_user_Russian <= 0 AND
+meta_and_user_French <= 0 AND
+meta_and_user_Music <= 0 AND
+meta_and_user_Mystery <= 0 AND
+meta_and_user_tomatoUserMeter <= 63: 1 (12.0)
+
+meta_and_user_Sport > 0 AND
+meta_and_user_Biography > 0: 0 (6.0/1.0)
+
+meta_and_user_Biography > 0 AND
+meta_and_user_tomatoMeter > 75: 1 (5.0)
+
+meta_and_user_UK > 0 AND
+meta_and_user_Sci-Fi > 0: 0 (5.0/1.0)
+
+meta_and_user_France > 0 AND
+meta_and_user_Spanish <= 0: 0 (5.0)
+
+meta_and_user_French > 0 AND
+meta_and_user_Spanish <= 0 AND
+meta_and_user_year > 2005: 1 (5.0)
+
+meta_and_user_Sci-Fi > 0 AND
+meta_and_user_runtime <= 144 AND
+meta_and_user_tomatoMeter > 51: 1 (12.0/1.0)
+
+meta_and_user_Action > 0 AND
+meta_and_user_runtime > 129: 0 (8.0)
+
+meta_and_user_Mystery > 0 AND
+meta_and_user_year > 1997: 1 (8.0/1.0)
+
+meta_and_user_Action > 0 AND
+meta_and_user_tomatoUserRating > 3.4: 1 (7.0)
+
+meta_and_user_Thriller > 0 AND
+meta_and_user_Italy <= 0 AND
+meta_and_user_NOT RATED <= 0 AND
+meta_and_user_Crime <= 0: 0 (7.0/1.0)
+
+meta_and_user_French > 0 AND
+meta_and_user_Spanish <= 0: 0 (4.0)
+
+meta_and_user_Drama > 0 AND
+meta_and_user_Mandarin <= 0 AND
+meta_and_user_Urdu <= 0 AND
+meta_and_user_Italy <= 0 AND
+meta_and_user_Thriller <= 0 AND
+meta_and_user_Italian <= 0 AND
+meta_and_user_PG <= 0 AND
+meta_and_user_USA <= 0 AND
+meta_and_user_runtime <= 152: 1 (7.0)
+
+meta_and_user_Hindi > 0 AND
+meta_and_user_Comedy > 0 AND
+meta_and_user_Urdu > 0: 0 (3.0/1.0)
+
+meta_and_user_Hindi > 0 AND
+meta_and_user_Comedy <= 0: 0 (2.0)
+
+meta_and_user_Family > 0 AND
+meta_and_user_tomatoMeter > 43: 1 (7.0)
+
+meta_and_user_Family <= 0 AND
+meta_and_user_Drama <= 0 AND
+meta_and_user_Comedy <= 0: 0 (6.0)
+
+meta_and_user_Family <= 0 AND
+meta_and_user_G > 0: 1 (7.0/2.0)
+
+meta_and_user_runtime <= 92: 0 (8.0)
+
+meta_and_user_Italian > 0 AND
+meta_and_user_tomatoUserRating > 3.5: 0 (3.0)
+
+meta_and_user_tomatoUserMeter > 73 AND
+meta_and_user_USA <= 0: 1 (4.0)
+
+meta_and_user_Musical <= 0 AND
+meta_and_user_Sport <= 0 AND
+meta_and_user_USA <= 0: 0 (5.0/1.0)
+
+meta_and_user_NOT RATED <= 0 AND
+meta_and_user_Australia <= 0 AND
+meta_and_user_Adventure <= 0 AND
+meta_and_user_Comedy <= 0 AND
+meta_and_user_tomatoMeter > 59 AND
+meta_and_user_Thriller <= 0 AND
+meta_and_user_Sport <= 0 AND
+meta_and_user_imdbRating <= 7.6: 1 (6.0)
+
+meta_and_user_NOT RATED <= 0 AND
+meta_and_user_Australia <= 0 AND
+meta_and_user_Music <= 0 AND
+meta_and_user_Italian <= 0 AND
+meta_and_user_Sport <= 0 AND
+meta_and_user_Spanish <= 0 AND
+meta_and_user_tomatoUserRating > 3.8: 1 (10.0/1.0)
+
+meta_and_user_NOT RATED <= 0 AND
+meta_and_user_Italian <= 0 AND
+meta_and_user_Sport <= 0 AND
+meta_and_user_Romance <= 0: 0 (15.0/2.0)
+
+meta_and_user_Romance <= 0: 1 (6.0)
+
+meta_and_user_Comedy <= 0: 0 (4.0/1.0)
+
+meta_and_user_PG-13 <= 0 AND
+meta_and_user_tomatoUserRating > 3.3: 1 (4.0/1.0)
+
+meta_and_user_R <= 0: 1 (5.0)
+
+: 0 (2.0)
+
+Number of Rules  : 	45
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         166               52.3659 %
+Incorrectly Classified Instances       151               47.6341 %
+Kappa statistic                          0.0143
+Mean absolute error                      0.4713
+Root mean squared error                  0.6419
+Relative absolute error                 97.3899 %
+Root relative squared error            130.5123 %
+Total Number of Instances              317     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.415    0.401    0.419      0.415    0.417      0.014    0.534     0.435     0
+                 0.599    0.585    0.596      0.599    0.597      0.014    0.534     0.616     1
+Weighted Avg.    0.524    0.509    0.523      0.524    0.523      0.014    0.534     0.542     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  54  76 |   a = 0
+  75 112 |   b = 1
+

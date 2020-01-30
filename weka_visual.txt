@@ -1,0 +1,129 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -C 0.25 -M 2
+Relation:     complete_data-weka.filters.unsupervised.attribute.Remove-R1-124,951-9000
+Instances:    317
+Attributes:   827
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+visual_98 > 0.45744 AND
+visual_822 <= 729320 AND
+visual_91 <= 0.143659: 0 (13.0)
+
+visual_11 > 0.35479 AND
+visual_80 <= 0.160245: 0 (13.0)
+
+visual_102 > 0.50792: 1 (20.0)
+
+visual_117 > 0.308755: 1 (15.0)
+
+visual_525 <= 0.000123 AND
+visual_538 > 0.000158 AND
+visual_149 > 0.000063: 1 (11.0/1.0)
+
+visual_211 > 0.000079 AND
+visual_170 <= 0.000066: 0 (9.0/1.0)
+
+visual_559 > 0.000114 AND
+visual_1 <= 0.33914: 1 (9.0)
+
+visual_282 <= 0.000097 AND
+visual_773 <= 0.000108 AND
+visual_7 <= 0.32918 AND
+visual_35 <= 0.70709 AND
+visual_518 <= 0.00027 AND
+visual_538 > 0.000078 AND
+visual_698 <= 0.000066: 1 (11.0/1.0)
+
+visual_177 <= 0.000177 AND
+visual_263 <= 0.000088 AND
+visual_7 > 0.33092: 1 (12.0)
+
+visual_99 <= 0.12574 AND
+visual_126 > 0.144285: 1 (12.0)
+
+visual_127 > 0.13752 AND
+visual_729 <= 0.000085 AND
+visual_542 <= 0.000093 AND
+visual_201 <= 0.000388 AND
+visual_215 <= 0.000104 AND
+visual_721 <= 0.000035 AND
+visual_779 <= 0.33196: 0 (15.0)
+
+visual_282 > 0.000097 AND
+visual_372 > 0.000055: 0 (4.0)
+
+visual_773 > 0.000108 AND
+visual_255 <= 0.00006 AND
+visual_538 > 0.000078 AND
+visual_518 <= 0.000315 AND
+visual_698 > 0.000069: 0 (11.0)
+
+visual_205 <= 0.000091 AND
+visual_177 > 0.000113 AND
+visual_177 <= 0.000277 AND
+visual_13 <= 0.229775: 1 (22.0/2.0)
+
+visual_668 > 0.000066: 0 (7.0/1.0)
+
+visual_177 > 0.000113 AND
+visual_12 > 0.037444: 0 (6.0)
+
+visual_42 <= 0.407175 AND
+visual_67 > 0.21046 AND
+visual_558 <= 0.000066: 0 (14.0/1.0)
+
+visual_37 <= 0.399715 AND
+visual_246 <= 0.000026 AND
+visual_556 <= 0.000031 AND
+visual_58 <= 0.098802 AND
+visual_177 <= 0.000006 AND
+visual_791 <= 113.53 AND
+visual_19 <= 0.000793 AND
+visual_16 <= 0.088335 AND
+visual_798 <= 0.070486: 1 (54.0/13.0)
+
+visual_73 > 0.19449 AND
+visual_425 <= 0.000086 AND
+visual_8 <= 0.28488: 1 (25.0)
+
+visual_27 <= 0.265085: 0 (31.0/7.0)
+
+: 1 (3.0)
+
+Number of Rules  : 	21
+
+
+Time taken to build model: 0.3 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         184               58.0442 %
+Incorrectly Classified Instances       133               41.9558 %
+Kappa statistic                          0.0731
+Mean absolute error                      0.4645
+Root mean squared error                  0.581 
+Relative absolute error                 95.9783 %
+Root relative squared error            118.1192 %
+Total Number of Instances              317     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.277    0.209    0.480      0.277    0.351      0.079    0.541     0.441     0
+                 0.791    0.723    0.612      0.791    0.690      0.079    0.541     0.612     1
+Weighted Avg.    0.580    0.512    0.558      0.580    0.551      0.079    0.541     0.542     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  36  94 |   a = 0
+  39 148 |   b = 1
+
